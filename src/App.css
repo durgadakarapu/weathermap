@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.temperatureInCentigrade:after {
+  content: "\2103";
+  vertical-align: super;
+  font-size: 10px;
+}
+
+.forecastDataView {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.loadingError {
+    color: red;
+    text-align: center;
+}
+
+.progressBar {
+    width: 60%;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.forecastDataTable {
+    height: 800px;
+    width: 1500px;
+    margin-top: 10px;
+}
